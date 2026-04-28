@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Settle In | Get in Touch</title>
+  <meta name="description" content="Contact Settle In. Get in touch with Mark (Ireland) or Richard (NZ), book a coaching session, or enquire about becoming an immigration partner." />
+  <link rel="canonical" href="https://www.settlein.io/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+        <div class="nav-links">
+          <a href="ireland.html">Ireland</a>
+          <a href="new-zealand.html">New Zealand</a>
+          <a href="resources.html">Resources</a>
+          <a href="community.html">Community</a>
+          <a href="reports.html">Reports</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-cta">
+          <a href="pricing.html" class="btn btn-outline btn-sm">View Plans</a>
+          <a href="community.html" class="btn btn-primary btn-sm">Join Community</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+      <div class="nav-mobile">
+        <a href="ireland.html">🍀 Ireland</a>
+        <a href="new-zealand.html">🥝 New Zealand</a>
+        <a href="resources.html">📚 Resources</a>
+        <a href="community.html">💬 Community</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="pricing.html">💳 Pricing</a>
+        <a href="about.html">👥 About</a>
+        <a href="contact.html">✉️ Contact</a>
+        <a href="community.html" class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Join Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="badge badge-blue" style="margin-bottom:1rem">✉️ Contact</div>
+        <h1>Get in<br /><span class="text-gradient">Touch</span></h1>
+        <p>Questions about membership, coaching, partnerships, or anything else — we'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-3" style="margin-bottom:4rem">
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">💬</div>
+            <h3>Join the Community</h3>
+            <p style="margin-top:0.5rem;margin-bottom:1.5rem;font-size:0.9rem">The fastest way to get answers. Our Telegram community is active daily with members and both founders.</p>
+            <a href="pricing.html" class="btn btn-primary" style="width:100%;justify-content:center">Join Community →</a>
+          </div>
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">📧</div>
+            <h3>Send a Message</h3>
+            <p style="margin-top:0.5rem;margin-bottom:1.5rem;font-size:0.9rem">Use the form below for general enquiries, partnership requests, or coaching bookings. We respond within 24 hours.</p>
+            <a href="#contact-form" class="btn btn-outline" style="width:100%;justify-content:center">Send Message →</a>
+          </div>
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">📞</div>
+            <h3>Book a Free Call</h3>
+            <p style="margin-top:0.5rem;margin-bottom:1.5rem;font-size:0.9rem">Not sure which plan is right for you? Book a free 20-minute call with Mark or Richard to discuss your situation.</p>
+            <a href="#contact-form" class="btn btn-outline" style="width:100%;justify-content:center">Book a Call →</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="grid-2" id="contact-form" style="align-items:start">
+          <div class="reveal">
+            <h2 style="margin-bottom:0.75rem">Send Us a Message</h2>
+            <p style="margin-bottom:2rem">Fill in the form and we'll get back to you within 24 hours.</p>
+            <form class="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">What's this about?</label>
+                <select id="subject" class="form-select">
+                  <option value="">Select a topic</option>
+                  <option value="membership">Membership / Pricing</option>
+                  <option value="coaching">1-on-1 Coaching Session</option>
+                  <option value="ireland">Ireland — General Enquiry</option>
+                  <option value="nz">New Zealand — General Enquiry</option>
+                  <option value="reports">Monthly Reports</option>
+                  <option value="partnership">Immigration Partner Enquiry</option>
+                  <option value="media">Media / Press</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="destination">Your destination</label>
+                <select id="destination" class="form-select">
+                  <option value="">Select destination</option>
+                  <option value="ireland">Ireland</option>
+                  <option value="nz">New Zealand</option>
+                  <option value="both">Both / Undecided</option>
+                  <option value="na">Not applicable</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" class="form-textarea" placeholder="Tell us a bit about your situation and what you need help with..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Send Message →</button>
+            </form>
+          </div>
+
+          <div class="reveal">
+            <div class="card" style="margin-bottom:1.5rem">
+              <div class="badge badge-green" style="margin-bottom:1rem">🍀 Ireland Enquiries</div>
+              <h4 style="margin-bottom:0.5rem">Talk to Mark</h4>
+              <p style="font-size:0.9rem">Mark handles all Ireland-related enquiries — membership, coaching, job market questions, and permit guidance referrals.</p>
+              <p style="font-size:0.85rem;color:var(--color-text-faint);margin-top:0.75rem">Response time: within 24 hours</p>
+            </div>
+            <div class="card" style="margin-bottom:1.5rem">
+              <div class="badge badge-blue" style="margin-bottom:1rem">🥝 New Zealand Enquiries</div>
+              <h4 style="margin-bottom:0.5rem">Talk to Richard</h4>
+              <p style="font-size:0.9rem">Richard handles all NZ-related enquiries — membership, coaching, visa questions, and NZ job market guidance.</p>
+              <p style="font-size:0.85rem;color:var(--color-text-faint);margin-top:0.75rem">Response time: within 24 hours</p>
+            </div>
+            <div class="card" style="background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2)">
+              <p style="color:var(--color-text);font-size:0.9rem">⚠️ <strong>Immigration advice:</strong> We cannot provide visa or immigration legal advice. For personalised immigration guidance, please see our <a href="#partners" style="color:var(--color-primary)">partner advisors</a> below.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Immigration Partners -->
+    <section class="section" style="background:var(--color-bg-2)" id="partners">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-gold">Immigration Partners</div>
+          <h2>Licensed Immigration Advisors</h2>
+          <p>We partner with accredited immigration professionals in both Ireland and New Zealand. <strong style="color:var(--color-text)">We do not provide immigration advice ourselves.</strong> These partners can help with your specific visa situation.</p>
+        </div>
+
+        <div class="grid-2" style="margin-bottom:3rem">
+          <div>
+            <h3 style="margin-bottom:1.5rem;color:var(--color-text)">🍀 Ireland Immigration Partners</h3>
+            <div class="grid-2" style="gap:1rem">
+              <div class="partner-card reveal">
+                <div class="partner-logo-placeholder">⚖️</div>
+                <h4>Ireland Partner 1</h4>
+                <p style="font-size:0.85rem;margin-top:0.5rem">Employment Permits, IRP registration, family reunification.</p>
+                <p style="font-size:0.8rem;color:var(--color-text-faint);margin-top:0.75rem;font-style:italic">Coming soon</p>
+              </div>
+              <div class="partner-card reveal">
+                <div class="partner-logo-placeholder">🏛️</div>
+                <h4>Ireland Partner 2</h4>
+                <p style="font-size:0.85rem;margin-top:0.5rem">Critical Skills Permits, Stamp 4, citizenship pathways.</p>
+                <p style="font-size:0.8rem;color:var(--color-text-faint);margin-top:0.75rem;font-style:italic">Coming soon</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 style="margin-bottom:1.5rem;color:var(--color-text)">🥝 New Zealand Immigration Partners</h3>
+            <div class="grid-2" style="gap:1rem">
+              <div class="partner-card reveal">
+                <div class="partner-logo-placeholder">⚖️</div>
+                <h4>NZ Partner 1</h4>
+                <p style="font-size:0.85rem;margin-top:0.5rem">AEWV, Skilled Migrant Category, family visas.</p>
+                <p style="font-size:0.8rem;color:var(--color-text-faint);margin-top:0.75rem;font-style:italic">Coming soon</p>
+              </div>
+              <div class="partner-card reveal">
+                <div class="partner-logo-placeholder">🏛️</div>
+                <h4>NZ Partner 2</h4>
+                <p style="font-size:0.85rem;margin-top:0.5rem">Employer accreditation, resident visas, NZQA assessments.</p>
+                <p style="font-size:0.8rem;color:var(--color-text-faint);margin-top:0.75rem;font-style:italic">Coming soon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal" style="text-align:center;max-width:600px;margin:0 auto">
+          <h3 style="margin-bottom:0.75rem">Are You an Immigration Advisor?</h3>
+          <p style="font-size:0.9rem;margin-bottom:1.5rem">We're looking for licensed immigration advisors in Ireland and New Zealand to partner with. If you work with skilled migrants and want to reach our community of 2,000+ professionals, get in touch.</p>
+          <a href="#contact-form" class="btn btn-primary">Enquire About Partnership →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">FAQ</div>
+          <h2>Quick Answers</h2>
+        </div>
+        <div style="max-width:720px;margin:0 auto">
+          <div class="faq-item reveal">
+            <button class="faq-question">How quickly do you respond to messages? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We aim to respond to all messages within 24 hours on business days. For urgent questions, the fastest way to get help is through our Telegram community, where members and both founders are active daily.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">Can I book a call before joining? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Yes. We offer a free 20-minute discovery call for people who want to understand whether Settle In is right for them before committing to a plan. Use the contact form above and select "Membership / Pricing" as the topic.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">How do I become an immigration partner? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We're actively looking for licensed immigration advisors in Ireland and New Zealand to partner with. Use the contact form above and select "Immigration Partner Enquiry". We'll get back to you within 48 hours to discuss the partnership model.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+          <p>Expert relocation guides, community, and support for skilled professionals moving to Ireland and New Zealand.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="ireland.html">Move to Ireland</a></li>
+            <li><a href="new-zealand.html">Move to New Zealand</a></li>
+            <li><a href="resources.html">Free Resources</a></li>
+            <li><a href="reports.html">Monthly Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="community.html">Join Telegram</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#partners">Immigration Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color:var(--color-text-muted)">© 2026 Settle In. All rights reserved. Not a licensed immigration advisor.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

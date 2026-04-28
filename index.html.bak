@@ -27,10 +27,6 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
-  
-  <!-- Leaflet.js for interactive map -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -286,34 +282,6 @@
               </li>
             </ul>
             <a href="pricing.html" class="btn btn-emerald">From €29/month →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive World Map -->
-    <section class="section" style="background:var(--color-bg-2)">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="badge badge-blue">Global Coverage</div>
-          <h2>Where We Operate</h2>
-          <p>Click on a country to explore opportunities. Green = live guides available. Amber = coming soon.</p>
-        </div>
-        <div class="reveal" style="max-width:1000px;margin:0 auto">
-          <div id="world-map" style="height:500px;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--color-border)"></div>
-          <div style="display:flex;gap:1.5rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap;font-size:0.85rem">
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="width:16px;height:16px;background:#10b981;border-radius:4px"></div>
-              <span style="color:var(--color-text-muted)">Live — Full guides available</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="width:16px;height:16px;background:#f59e0b;border-radius:4px"></div>
-              <span style="color:var(--color-text-muted)">Coming Soon — Join waitlist</span>
-            </div>
-            <div style="display:flex;align-items:center;gap:0.5rem">
-              <div style="width:16px;height:16px;background:#475569;border-radius:4px"></div>
-              <span style="color:var(--color-text-muted)">Not yet available</span>
-            </div>
           </div>
         </div>
       </div>

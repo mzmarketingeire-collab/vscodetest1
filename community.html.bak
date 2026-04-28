@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — Settle In | Telegram Group, Live Q&A & Workshops</title>
+  <meta name="description" content="Join the Settle In community. Private Telegram group, weekly live Q&A calls with local recruiters, CV workshops, and interview prep for skilled migrants moving to Ireland and New Zealand." />
+  <link rel="canonical" href="https://www.settlein.io/community.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Settle In Home">
+          <div class="logo-icon">🌍</div>
+          <span>Settle In</span>
+        </a>
+        <div class="nav-links">
+          <a href="ireland.html">Ireland</a>
+          <a href="new-zealand.html">New Zealand</a>
+          <a href="resources.html">Resources</a>
+          <a href="community.html" class="active">Community</a>
+          <a href="reports.html">Reports</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-cta">
+          <a href="pricing.html" class="btn btn-outline btn-sm">View Plans</a>
+          <a href="community.html" class="btn btn-primary btn-sm">Join Community</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile">
+        <a href="ireland.html">🍀 Ireland</a>
+        <a href="new-zealand.html">🥝 New Zealand</a>
+        <a href="resources.html">📚 Resources</a>
+        <a href="community.html">💬 Community</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="pricing.html">💳 Pricing</a>
+        <a href="about.html">👥 About</a>
+        <a href="contact.html">✉️ Contact</a>
+        <a href="community.html" class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Join Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="badge badge-blue" style="margin-bottom:1rem">💬 Community</div>
+        <h1>A Community That<br /><span class="text-gradient">Gets It</span></h1>
+        <p>Connect with skilled professionals on the same journey. Real advice, real connections, real support — from people who've been there.</p>
+        <div class="hero-ctas">
+          <a href="pricing.html" class="btn btn-primary btn-lg">Join the Community →</a>
+          <a href="#what-you-get" class="btn btn-outline btn-lg">What's Included</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="section" id="what-you-get">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">What's Included</div>
+          <h2>More Than a Forum — A Real Support Network</h2>
+          <p>Our community is built around genuine connection and practical support. Here's what members get.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-blue">💬</div>
+            <h3>Private Telegram Group</h3>
+            <p style="margin-top:0.5rem">Our private Telegram community is active daily. Ask questions, share tips, find flatmates, get job leads, and connect with professionals in your industry — before you even land.</p>
+            <ul class="info-list" style="margin-top:1rem">
+              <li><span class="icon">✅</span> Ireland channel</li>
+              <li><span class="icon">✅</span> New Zealand channel</li>
+              <li><span class="icon">✅</span> Industry-specific threads</li>
+              <li><span class="icon">✅</span> Housing & accommodation tips</li>
+              <li><span class="icon">✅</span> Job leads & referrals</li>
+            </ul>
+          </div>
+          <div class="card reveal" id="calls">
+            <div class="feature-icon feature-icon-green">🎙️</div>
+            <h3>Live Q&A Calls</h3>
+            <p style="margin-top:0.5rem">Weekly and biweekly live calls with local recruiters in Ireland and New Zealand. Ask real questions about the job market, hiring processes, salary expectations, and what employers are actually looking for right now.</p>
+            <ul class="info-list" style="margin-top:1rem">
+              <li><span class="icon">✅</span> Weekly NZ recruiter call</li>
+              <li><span class="icon">✅</span> Weekly Ireland recruiter call</li>
+              <li><span class="icon">✅</span> Recorded for members who can't attend live</li>
+              <li><span class="icon">✅</span> Submit questions in advance</li>
+              <li><span class="icon">✅</span> Industry-specific sessions</li>
+            </ul>
+          </div>
+          <div class="card reveal" id="workshops">
+            <div class="feature-icon feature-icon-gold">🎯</div>
+            <h3>Workshops & Training</h3>
+            <p style="margin-top:0.5rem">Practical workshops to help you land the job and settle in faster. Led by recruiters and professionals with direct experience in the Irish and NZ job markets.</p>
+            <ul class="info-list" style="margin-top:1rem">
+              <li><span class="icon">✅</span> CV localisation workshop</li>
+              <li><span class="icon">✅</span> Interview prep masterclass</li>
+              <li><span class="icon">✅</span> Salary negotiation tactics</li>
+              <li><span class="icon">✅</span> LinkedIn optimisation</li>
+              <li><span class="icon">✅</span> Settling-in bootcamp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV & Career Support -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-content reveal">
+            <div class="badge badge-green">CV & Career Support</div>
+            <h2>Land the Job Before You Land in the Country</h2>
+            <p>Your CV from home won't cut it in Ireland or New Zealand. Employers in both countries have specific expectations — and getting it wrong means your application goes straight to the bin.</p>
+            <p>Our CV localisation workshops and 1-on-1 coaching sessions (available as an upsell) help you present yourself the way local employers expect.</p>
+            <ul class="info-list">
+              <li><span class="icon">📄</span> <strong style="color:var(--color-text)">CV format:</strong> Irish and NZ CVs are typically 2 pages, achievement-focused, no photo</li>
+              <li><span class="icon">🎯</span> <strong style="color:var(--color-text)">Keywords:</strong> ATS optimisation for Irish and NZ job boards</li>
+              <li><span class="icon">💼</span> <strong style="color:var(--color-text)">Cover letters:</strong> What to include (and what to leave out) for each market</li>
+              <li><span class="icon">🤝</span> <strong style="color:var(--color-text)">Interview style:</strong> Both markets favour competency-based interviews — we'll prepare you</li>
+              <li><span class="icon">💰</span> <strong style="color:var(--color-text)">Salary negotiation:</strong> Know your worth and how to ask for it</li>
+            </ul>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
+              <a href="pricing.html" class="btn btn-emerald">Join to Access Workshops →</a>
+              <a href="contact.html" class="btn btn-outline">Book 1-on-1 Coaching</a>
+            </div>
+          </div>
+          <div class="info-image reveal">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80&auto=format&fit=crop" alt="Professionals collaborating and networking" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Stats -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-number">2,000+</div>
+            <div class="stat-label">Active community members</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number">Weekly</div>
+            <div class="stat-label">Live Q&A calls per country</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Industries represented</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Countries with local recruiter access</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">Member Stories</div>
+          <h2>What Members Are Saying</h2>
+        </div>
+        <div class="grid-3">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The Telegram community is the best thing about Settle In. I asked a question about finding accommodation in Dublin and had 12 responses within an hour — including someone who knew of a flat available the following week."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SK</div>
+              <div>
+                <div class="testimonial-name">Sanjay K.</div>
+                <div class="testimonial-role">IT Project Manager → Dublin</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The weekly Q&A call with the NZ recruiter was a game-changer. I learned that my CV format was completely wrong for the NZ market. After the workshop, I rewrote it and had 3 interviews within 2 weeks."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">LM</div>
+              <div>
+                <div class="testimonial-name">Lucia M.</div>
+                <div class="testimonial-role">Civil Engineer → Auckland</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I was nervous about salary negotiation in Ireland — it's not something we do openly in my home country. The workshop gave me the confidence and the exact language to use. I negotiated €8,000 more than the initial offer."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RA</div>
+              <div>
+                <div class="testimonial-name">Rania A.</div>
+                <div class="testimonial-role">Quantity Surveyor → Cork</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1-on-1 Coaching -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-gold">⭐ Premium Upsell</div>
+          <h2>1-on-1 Coaching Sessions</h2>
+          <p>For members who want personalised, focused support. Book a private session with Mark (Ireland) or Richard (NZ).</p>
+        </div>
+        <div class="grid-3">
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-blue">📄</div>
+            <h3>CV Review & Rewrite</h3>
+            <p style="margin-top:0.5rem;margin-bottom:1rem">60-minute session. We review your current CV, identify gaps, and rewrite it together for the Irish or NZ market.</p>
+            <div style="font-size:1.5rem;font-weight:800;color:var(--color-text);margin-bottom:1rem">€149 <span style="font-size:0.9rem;font-weight:500;color:var(--color-text-muted)">per session</span></div>
+            <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Book Session →</a>
+          </div>
+          <div class="card reveal" style="border-color:rgba(59,130,246,0.3)">
+            <div class="feature-icon feature-icon-green">🎯</div>
+            <h3>Interview Preparation</h3>
+            <p style="margin-top:0.5rem;margin-bottom:1rem">90-minute mock interview session with detailed feedback. Tailored to your industry and target role in Ireland or NZ.</p>
+            <div style="font-size:1.5rem;font-weight:800;color:var(--color-text);margin-bottom:1rem">€199 <span style="font-size:0.9rem;font-weight:500;color:var(--color-text-muted)">per session</span></div>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Book Session →</a>
+          </div>
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-gold">🚀</div>
+            <h3>Full Relocation Strategy</h3>
+            <p style="margin-top:0.5rem;margin-bottom:1rem">2-hour deep-dive session covering your entire relocation plan — visa pathway, job search strategy, CV, interview prep, and settling-in checklist.</p>
+            <div style="font-size:1.5rem;font-weight:800;color:var(--color-text);margin-bottom:1rem">€299 <span style="font-size:0.9rem;font-weight:500;color:var(--color-text-muted)">per session</span></div>
+            <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Book Session →</a>
+          </div>
+        </div>
+        <p class="text-center text-muted mt-4" style="font-size:0.85rem">1-on-1 sessions are available to all members. Annual plan members receive one free onboarding call.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="badge badge-blue" style="margin-bottom:1rem">💬 Ready to Join?</div>
+          <h2>Don't Navigate This Alone</h2>
+          <p>2,000+ skilled professionals are already in the community. Join them and start your relocation with the support you deserve.</p>
+          <div class="cta-buttons">
+            <a href="pricing.html" class="btn btn-primary btn-lg">Join the Community →</a>
+            <a href="pricing.html" class="btn btn-outline btn-lg">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+          <p>Expert relocation guides, community, and support for skilled professionals moving to Ireland and New Zealand.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="ireland.html">Move to Ireland</a></li>
+            <li><a href="new-zealand.html">Move to New Zealand</a></li>
+            <li><a href="resources.html">Free Resources</a></li>
+            <li><a href="reports.html">Monthly Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="community.html">Join Telegram</a></li>
+            <li><a href="community.html#calls">Live Q&A Calls</a></li>
+            <li><a href="community.html#workshops">Workshops</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#partners">Immigration Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color:var(--color-text-muted)">© 2026 Settle In. All rights reserved. Not a licensed immigration advisor.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

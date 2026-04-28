@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Settle In | Mark & Richard's Story</title>
+  <meta name="description" content="Meet the founders of Settle In. Mark (Irish recruiter living in NZ) and Richard (Kiwi who lived in France for 14 years). Built by people who've lived the expat experience." />
+  <link rel="canonical" href="https://www.settlein.io/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+        <div class="nav-links">
+          <a href="ireland.html">Ireland</a>
+          <a href="new-zealand.html">New Zealand</a>
+          <a href="resources.html">Resources</a>
+          <a href="community.html">Community</a>
+          <a href="reports.html">Reports</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html" class="active">About</a>
+        </div>
+        <div class="nav-cta">
+          <a href="pricing.html" class="btn btn-outline btn-sm">View Plans</a>
+          <a href="community.html" class="btn btn-primary btn-sm">Join Community</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+      <div class="nav-mobile">
+        <a href="ireland.html">🍀 Ireland</a>
+        <a href="new-zealand.html">🥝 New Zealand</a>
+        <a href="resources.html">📚 Resources</a>
+        <a href="community.html">💬 Community</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="pricing.html">💳 Pricing</a>
+        <a href="about.html">👥 About</a>
+        <a href="contact.html">✉️ Contact</a>
+        <a href="community.html" class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Join Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="badge badge-blue" style="margin-bottom:1rem">👥 About Us</div>
+        <h1>Built by People Who've<br /><span class="text-gradient">Lived the Experience</span></h1>
+        <p>Settle In was founded by two people who know what it's like to move country, navigate a new system, and build a life from scratch. We built the resource we wish we'd had.</p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-content reveal">
+            <div class="badge badge-blue">Our Mission</div>
+            <h2>Relocation Shouldn't Be This Hard</h2>
+            <p>Moving country is one of the biggest decisions a person can make. Yet most skilled migrants navigate it alone — piecing together information from outdated forums, unreliable websites, and well-meaning friends who moved years ago.</p>
+            <p>We built Settle In to change that. Our mission is to give skilled professionals the expert guidance, real community, and up-to-date intelligence they need to relocate with confidence — not confusion.</p>
+            <ul class="info-list">
+              <li><span class="icon">🎯</span> <strong style="color:var(--color-text)">Expert-led:</strong> Guides written by recruiters and professionals actively working in Ireland and NZ</li>
+              <li><span class="icon">🤝</span> <strong style="color:var(--color-text)">Community-first:</strong> Real connections with people on the same journey</li>
+              <li><span class="icon">🔄</span> <strong style="color:var(--color-text)">Always current:</strong> Monthly reports and regular guide updates keep information fresh</li>
+              <li><span class="icon">⚖️</span> <strong style="color:var(--color-text)">Honest:</strong> We tell you what it's really like — the good and the challenging</li>
+            </ul>
+          </div>
+          <div class="info-image reveal">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&auto=format&fit=crop" alt="Team collaboration and planning" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-gold">The Founders</div>
+          <h2>Meet Mark & Richard</h2>
+          <p>Two people who've lived the expat experience — from different angles, in different countries.</p>
+        </div>
+
+        <!-- Mark -->
+        <div class="info-grid" style="margin-bottom:5rem">
+          <div class="info-image reveal">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80&auto=format&fit=crop" alt="Mark — Ireland Lead, Settle In" loading="lazy" />
+          </div>
+          <div class="info-content reveal">
+            <div class="badge badge-green" style="margin-bottom:1rem">🍀 Ireland Lead</div>
+            <h2>Mark</h2>
+            <p style="font-size:1.1rem;color:var(--color-text);margin-bottom:1rem">Irish recruiter. Expat in New Zealand. Construction & tech specialist.</p>
+            <p>Mark is from Ireland and has spent years recruiting in both the Irish technology sector and the New Zealand construction industry. He moved to New Zealand on a visa and has lived the experience that many of our members are going through right now.</p>
+            <p>He knows what Irish employers look for, how the Irish job market works, and what it's really like to land in a new country with a suitcase and a job offer. He leads the Ireland side of Settle In — bringing recruiter-level insight to every guide, Q&A call, and coaching session.</p>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.5rem">
+              <div class="badge badge-green">🏗️ Construction Recruitment</div>
+              <div class="badge badge-blue">💻 Tech Recruitment</div>
+              <div class="badge badge-gold">🌍 Expat in NZ</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Richard -->
+        <div class="info-grid reverse">
+          <div class="info-image reveal">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80&auto=format&fit=crop" alt="Richard — New Zealand Lead, Settle In" loading="lazy" />
+          </div>
+          <div class="info-content reveal">
+            <div class="badge badge-blue" style="margin-bottom:1rem">🥝 New Zealand Lead</div>
+            <h2>Richard</h2>
+            <p style="font-size:1.1rem;color:var(--color-text);margin-bottom:1rem">Kiwi. 14 years in France. French citizen. Returned to NZ and rebuilt his life.</p>
+            <p>Richard is a New Zealander who moved to France, lived there for 14 years, and obtained French citizenship. He knows what it's like to be a foreigner in a new country — navigating a different language, culture, bureaucracy, and job market.</p>
+            <p>When he returned to New Zealand, he faced a different challenge: coming back to a country that had changed, and having to re-establish himself. That experience gave him a unique perspective on what returning migrants and new arrivals face in NZ. He leads the New Zealand side of Settle In — bringing both insider knowledge and genuine empathy to every interaction.</p>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.5rem">
+              <div class="badge badge-blue">🥝 NZ Local Expert</div>
+              <div class="badge badge-green">🇫🇷 14 Years in France</div>
+              <div class="badge badge-gold">🌍 Returning Expat</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why We're Different -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">Why Settle In?</div>
+          <h2>What Makes Us Different</h2>
+          <p>There's no shortage of immigration websites. Here's why Settle In is different.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-blue">🎯</div>
+            <h3>Recruiter-Level Insight</h3>
+            <p style="margin-top:0.5rem">Our founders are active recruiters in Ireland and New Zealand. We don't just know what the visa requirements are — we know what employers are actually looking for, what salaries are being offered, and how to get hired.</p>
+          </div>
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-green">❤️</div>
+            <h3>Lived Experience</h3>
+            <p style="margin-top:0.5rem">We've both lived as migrants in new countries. We know the anxiety of arriving somewhere new, the frustration of bureaucracy, and the joy of finally feeling settled. That empathy shapes everything we do.</p>
+          </div>
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-gold">🔄</div>
+            <h3>Always Up to Date</h3>
+            <p style="margin-top:0.5rem">Immigration rules change. Job markets shift. Cost of living fluctuates. Unlike static websites, our content is regularly updated and our monthly reports keep you current with the latest intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-green">Our Values</div>
+          <h2>What We Stand For</h2>
+        </div>
+        <div class="grid-4">
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">🤝</div>
+            <h3>Honesty</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">We tell you what it's really like — including the challenges. No sugar-coating.</p>
+          </div>
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">🎓</div>
+            <h3>Expertise</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">Everything we publish is based on real experience and current knowledge — not recycled internet content.</p>
+          </div>
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">🌍</div>
+            <h3>Inclusivity</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">We serve skilled migrants from all backgrounds and countries. Our Global tier makes quality guidance accessible to everyone.</p>
+          </div>
+          <div class="card reveal" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:1rem">⚖️</div>
+            <h3>Responsibility</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">We're clear about what we are and aren't. We're not immigration lawyers — and we always direct members to licensed advisors for legal matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="badge badge-blue" style="margin-bottom:1rem">🚀 Ready to Start?</div>
+          <h2>Join the Settle In Community</h2>
+          <p>2,000+ skilled professionals are already using Settle In to plan and execute their moves to Ireland and New Zealand.</p>
+          <div class="cta-buttons">
+            <a href="community.html" class="btn btn-primary btn-lg">Join the Community →</a>
+            <a href="contact.html" class="btn btn-outline btn-lg">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+          <p>Expert relocation guides, community, and support for skilled professionals moving to Ireland and New Zealand.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="ireland.html">Move to Ireland</a></li>
+            <li><a href="new-zealand.html">Move to New Zealand</a></li>
+            <li><a href="resources.html">Free Resources</a></li>
+            <li><a href="reports.html">Monthly Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="community.html">Join Telegram</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#partners">Immigration Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color:var(--color-text-muted)">© 2026 Settle In. All rights reserved. Not a licensed immigration advisor.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

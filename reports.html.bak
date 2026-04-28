@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Country Reports — Settle In | Ireland & NZ Intelligence</title>
+  <meta name="description" content="Monthly PDF reports for skilled migrants. Ireland and New Zealand employment insights, new jobs, permit updates, regional focus, and salary benchmarks. From €4.99/month." />
+  <link rel="canonical" href="https://www.settlein.io/reports.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Settle In Monthly Country Reports",
+    "description": "Monthly PDF intelligence reports for skilled migrants. Covers Ireland and New Zealand employment market, new jobs, permit updates, and regional insights.",
+    "offers": [
+      { "@type": "Offer", "name": "Ireland Monthly Report", "price": "4.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" },
+      { "@type": "Offer", "name": "Ireland + NZ Bundle", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+        <div class="nav-links">
+          <a href="ireland.html">Ireland</a>
+          <a href="new-zealand.html">New Zealand</a>
+          <a href="resources.html">Resources</a>
+          <a href="community.html">Community</a>
+          <a href="reports.html" class="active">Reports</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-cta">
+          <a href="pricing.html" class="btn btn-outline btn-sm">View Plans</a>
+          <a href="community.html" class="btn btn-primary btn-sm">Join Community</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+      <div class="nav-mobile">
+        <a href="ireland.html">🍀 Ireland</a>
+        <a href="new-zealand.html">🥝 New Zealand</a>
+        <a href="resources.html">📚 Resources</a>
+        <a href="community.html">💬 Community</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="pricing.html">💳 Pricing</a>
+        <a href="about.html">👥 About</a>
+        <a href="contact.html">✉️ Contact</a>
+        <a href="community.html" class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Join Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="badge badge-gold" style="margin-bottom:1rem">📊 Monthly Reports</div>
+        <h1>Stay Ahead with Monthly<br /><span class="text-gradient">Country Intelligence</span></h1>
+        <p>Our monthly PDF reports give skilled migrants the latest employment insights, new job listings, permit updates, and regional focus — delivered to your inbox every month.</p>
+        <div class="hero-ctas">
+          <a href="#get-reports" class="btn btn-primary btn-lg">Get the Reports →</a>
+          <a href="#whats-inside" class="btn btn-outline btn-lg">What's Inside</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Report Cards -->
+    <section class="section" id="get-reports">
+      <div class="container">
+        <div class="grid-3" style="max-width:1000px;margin:0 auto">
+
+          <!-- Ireland Report -->
+          <div class="report-card reveal">
+            <div class="report-card-header">
+              <div class="badge badge-green" style="margin-bottom:0.75rem">🍀 Ireland</div>
+              <h3>Ireland Monthly Intelligence Report</h3>
+              <p style="margin-top:0.5rem;font-size:0.9rem">Everything a skilled migrant needs to know about the Irish employment market — delivered as a polished PDF every month.</p>
+            </div>
+            <div class="report-card-body">
+              <div style="font-size:2.5rem;font-weight:800;color:var(--color-text);line-height:1;margin-bottom:0.25rem">€4.99</div>
+              <div style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:1.5rem">per month · PDF delivered to your inbox · Cancel anytime</div>
+              <ul class="pricing-features" style="margin-bottom:1.5rem">
+                <li><span class="check">✓</span> New job listings by sector & region</li>
+                <li><span class="check">✓</span> Employment permit updates</li>
+                <li><span class="check">✓</span> Salary benchmark data</li>
+                <li><span class="check">✓</span> Regional spotlight (rotating)</li>
+                <li><span class="check">✓</span> Key news for migrants in Ireland</li>
+                <li><span class="check">✓</span> Recruiter insights & hiring trends</li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Join Waitlist →</a>
+            </div>
+          </div>
+
+          <!-- NZ Report -->
+          <div class="report-card reveal">
+            <div class="report-card-header" style="background:linear-gradient(135deg,rgba(59,130,246,0.15),rgba(16,185,129,0.1))">
+              <div class="badge badge-blue" style="margin-bottom:0.75rem">🥝 New Zealand</div>
+              <h3>New Zealand Monthly Intelligence Report</h3>
+              <p style="margin-top:0.5rem;font-size:0.9rem">The latest from the NZ employment market — visa updates, construction demand, tech hiring, and regional insights.</p>
+            </div>
+            <div class="report-card-body">
+              <div style="font-size:2.5rem;font-weight:800;color:var(--color-text);line-height:1;margin-bottom:0.25rem">€4.99</div>
+              <div style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:1.5rem">per month · PDF delivered to your inbox · Cancel anytime</div>
+              <ul class="pricing-features" style="margin-bottom:1.5rem">
+                <li><span class="check">✓</span> New job listings by sector & region</li>
+                <li><span class="check">✓</span> AEWV & visa policy updates</li>
+                <li><span class="check">✓</span> NZD salary benchmark data</li>
+                <li><span class="check">✓</span> Regional spotlight (rotating)</li>
+                <li><span class="check">✓</span> Key news for migrants in NZ</li>
+                <li><span class="check">✓</span> Recruiter insights & hiring trends</li>
+              </ul>
+              <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center">Join Waitlist →</a>
+            </div>
+          </div>
+
+          <!-- Bundle -->
+          <div class="report-card reveal" style="border-color:rgba(245,158,11,0.4)">
+            <div class="report-card-header" style="background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(59,130,246,0.1))">
+              <div class="badge badge-gold" style="margin-bottom:0.75rem">⭐ Best Value Bundle</div>
+              <h3>Ireland + New Zealand Bundle</h3>
+              <p style="margin-top:0.5rem;font-size:0.9rem">Both country reports in one subscription. Perfect for those comparing destinations or with connections in both countries.</p>
+            </div>
+            <div class="report-card-body">
+              <div style="font-size:2.5rem;font-weight:800;color:var(--color-text);line-height:1;margin-bottom:0.25rem">€9.99</div>
+              <div style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:1.5rem">per month · Both PDFs delivered · Cancel anytime · Save €0.99/mo</div>
+              <ul class="pricing-features" style="margin-bottom:1.5rem">
+                <li><span class="check">✓</span> Full Ireland Monthly Report</li>
+                <li><span class="check">✓</span> Full New Zealand Monthly Report</li>
+                <li><span class="check">✓</span> Ireland vs NZ comparison section</li>
+                <li><span class="check">✓</span> Cross-country salary benchmarks</li>
+                <li><span class="check">✓</span> Priority delivery</li>
+                <li><span class="check">✓</span> Archive access (all past issues)</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Join Waitlist →</a>
+            </div>
+          </div>
+
+        </div>
+        <p class="text-center text-muted mt-4" style="font-size:0.85rem">💳 Payment processing coming soon. Join the waitlist to be notified at launch and lock in founding subscriber pricing.</p>
+      </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section class="section" style="background:var(--color-bg-2)" id="whats-inside">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-gold">What's Inside Each Report</div>
+          <h2>Packed with Actionable Intelligence</h2>
+          <p>Every monthly report is researched and written by our team — people who are actively recruiting in Ireland and New Zealand.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-blue">💼</div>
+            <h3>New Job Listings</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">Curated job listings across key sectors — construction, tech, healthcare, and finance. Filtered for roles open to skilled migrants.</p>
+          </div>
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-green">📋</div>
+            <h3>Permit & Visa Updates</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">Any changes to work permit rules, processing times, salary thresholds, or immigration policy that affect skilled migrants.</p>
+          </div>
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-gold">💰</div>
+            <h3>Salary Benchmarks</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">Up-to-date salary data by role and region. Know what you should be earning before you negotiate your offer.</p>
+          </div>
+          <div class="card reveal">
+            <div class="feature-icon feature-icon-purple">🗺️</div>
+            <h3>Regional Spotlight</h3>
+            <p style="margin-top:0.5rem;font-size:0.9rem">Each month we deep-dive into one region — job market, cost of living, lifestyle, and what it's really like to live there as a migrant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Content -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">Sample Content</div>
+          <h2>A Taste of What's Inside</h2>
+          <p>Here's the kind of intelligence our reports deliver every month.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card reveal">
+            <div class="badge badge-green" style="margin-bottom:1rem">🍀 Ireland — Sample Insight</div>
+            <h3 style="margin-bottom:0.75rem">Construction Sector Update — April 2026</h3>
+            <p style="font-size:0.9rem;margin-bottom:1rem">Ireland's construction sector added 2,400 new roles in Q1 2026, driven by the National Development Plan's housing and infrastructure targets. Project managers and civil engineers remain the most in-demand roles, with average salaries up 6% year-on-year.</p>
+            <p style="font-size:0.9rem;margin-bottom:1rem"><strong style="color:var(--color-text)">Regional spotlight:</strong> Cork is seeing the highest growth outside Dublin, with 340 new construction roles posted in March alone. The Cork Docklands regeneration project is the key driver.</p>
+            <p style="font-size:0.85rem;color:var(--color-text-faint);font-style:italic">This is a sample excerpt. Full reports include 15–20 pages of detailed intelligence.</p>
+          </div>
+          <div class="card reveal">
+            <div class="badge badge-blue" style="margin-bottom:1rem">🥝 New Zealand — Sample Insight</div>
+            <h3 style="margin-bottom:0.75rem">AEWV Policy Update — April 2026</h3>
+            <p style="font-size:0.9rem;margin-bottom:1rem">Immigration New Zealand updated the median wage threshold for AEWV applications in March 2026. The new minimum is NZD $29.66/hour (up from $29.00). Employers with existing accreditation are not affected until renewal.</p>
+            <p style="font-size:0.9rem;margin-bottom:1rem"><strong style="color:var(--color-text)">Regional spotlight:</strong> Christchurch continues to outperform other regions for construction hiring. The city's rebuild programme has created 1,800 new roles in the past 6 months, with particular demand for quantity surveyors and site managers.</p>
+            <p style="font-size:0.85rem;color:var(--color-text-faint);font-style:italic">This is a sample excerpt. Full reports include 15–20 pages of detailed intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist CTA -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="badge badge-gold" style="margin-bottom:1rem">📊 Be First to Know</div>
+          <h2>Join the Reports Waitlist</h2>
+          <p>We're launching our monthly reports soon. Join the waitlist to be notified and lock in founding subscriber pricing.</p>
+          <form class="waitlist-form" style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+            <input type="email" placeholder="Enter your email address" class="form-input" style="max-width:320px" required />
+            <button type="submit" class="btn btn-primary btn-lg">Join Waitlist →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+          <p>Expert relocation guides, community, and support for skilled professionals moving to Ireland and New Zealand.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="ireland.html">Move to Ireland</a></li>
+            <li><a href="new-zealand.html">Move to New Zealand</a></li>
+            <li><a href="resources.html">Free Resources</a></li>
+            <li><a href="reports.html">Monthly Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="community.html">Join Telegram</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color:var(--color-text-muted)">© 2026 Settle In. All rights reserved. Not a licensed immigration advisor.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

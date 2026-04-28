@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Settle In | Plans for Skilled Migrants</title>
+  <meta name="description" content="Simple, transparent pricing for Settle In. Choose from Global affordable plans or premium Ireland/NZ local tiers. Monthly, annual, and lifetime options available." />
+  <link rel="canonical" href="https://www.settlein.io/pricing.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Settle In Pricing Plans",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Settle In Global — Basic", "description": "Affordable entry-level plan for skilled migrants worldwide. Content library and community access." },
+      { "@type": "ListItem", "position": 2, "name": "Settle In Ireland/NZ — Monthly", "description": "Premium local tier with live Q&A calls, CV workshops, and recruiter access." },
+      { "@type": "ListItem", "position": 3, "name": "Settle In Ireland/NZ — Annual", "description": "Best value annual plan with 1-on-1 onboarding call and priority access." }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Settle In Home">
+          <div class="logo-icon">🌍</div>
+          <span>Settle In</span>
+        </a>
+        <div class="nav-links">
+          <a href="ireland.html">Ireland</a>
+          <a href="new-zealand.html">New Zealand</a>
+          <a href="resources.html">Resources</a>
+          <a href="community.html">Community</a>
+          <a href="reports.html">Reports</a>
+          <a href="pricing.html" class="active">Pricing</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-cta">
+          <a href="pricing.html" class="btn btn-outline btn-sm">View Plans</a>
+          <a href="community.html" class="btn btn-primary btn-sm">Join Community</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile">
+        <a href="ireland.html">🍀 Ireland</a>
+        <a href="new-zealand.html">🥝 New Zealand</a>
+        <a href="resources.html">📚 Resources</a>
+        <a href="community.html">💬 Community</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="pricing.html">💳 Pricing</a>
+        <a href="about.html">👥 About</a>
+        <a href="contact.html">✉️ Contact</a>
+        <a href="community.html" class="btn btn-primary" style="margin-top:0.5rem;justify-content:center;">Join Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="badge badge-blue" style="margin-bottom:1rem">💳 Pricing</div>
+        <h1>Simple, Transparent<br /><span class="text-gradient">Pricing</span></h1>
+        <p>Invest in your relocation. Choose the plan that fits your stage of the journey. Cancel anytime.</p>
+      </div>
+    </section>
+
+    <!-- Global Tier -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">🌍 Settle In Global</div>
+          <h2>Affordable Plans for Skilled Migrants Worldwide</h2>
+          <p>Designed for skilled workers from developing countries who are planning their move to Ireland or New Zealand. Accessible pricing, real value.</p>
+        </div>
+
+        <div class="pricing-toggle">
+          <span data-label="monthly" class="active">Monthly</span>
+          <div class="toggle-switch" role="switch" aria-checked="false" tabindex="0">
+            <div class="toggle-knob"></div>
+          </div>
+          <span data-label="annual">Annual <span class="save-badge">Save 30%</span></span>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Global Basic -->
+          <div class="pricing-card reveal">
+            <div class="plan-name">Global Basic</div>
+            <div class="plan-price">
+              <span data-monthly>€<span style="font-size:2.8rem;font-weight:800">9</span></span>
+              <span data-annual style="display:none">€<span style="font-size:2.8rem;font-weight:800">63</span></span>
+            </div>
+            <div class="plan-period" data-period="monthly">/month</div>
+            <div class="plan-desc">Perfect for getting started. Access the core library and community.</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Full content library access</li>
+              <li><span class="check">✓</span> Community Telegram group</li>
+              <li><span class="check">✓</span> Monthly country newsletter</li>
+              <li><span class="check">✓</span> CV & interview tip guides</li>
+              <li><span class="check">✓</span> Cost of living tools</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Join Waitlist →</a>
+          </div>
+
+          <!-- Global Standard -->
+          <div class="pricing-card featured reveal">
+            <div class="popular-tag">Most Popular</div>
+            <div class="plan-name">Global Standard</div>
+            <div class="plan-price">
+              <span data-monthly>€<span style="font-size:2.8rem;font-weight:800">19</span></span>
+              <span data-annual style="display:none">€<span style="font-size:2.8rem;font-weight:800">133</span></span>
+            </div>
+            <div class="plan-period" data-period="monthly">/month</div>
+            <div class="plan-desc">Everything you need to plan and execute your move.</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Everything in Basic</li>
+              <li><span class="check">✓</span> Biweekly Q&A calls (group)</li>
+              <li><span class="check">✓</span> CV localisation guide</li>
+              <li><span class="check">✓</span> Interview prep workshop access</li>
+              <li><span class="check">✓</span> Salary negotiation guide</li>
+              <li><span class="check">✓</span> Priority community support</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Join Waitlist →</a>
+          </div>
+
+          <!-- Global Premium -->
+          <div class="pricing-card reveal">
+            <div class="plan-name">Global Premium</div>
+            <div class="plan-price">
+              <span data-monthly>€<span style="font-size:2.8rem;font-weight:800">39</span></span>
+              <span data-annual style="display:none">€<span style="font-size:2.8rem;font-weight:800">273</span></span>
+            </div>
+            <div class="plan-period" data-period="monthly">/month</div>
+            <div class="plan-desc">Full support for your entire relocation journey.</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Everything in Standard</li>
+              <li><span class="check">✓</span> Weekly live Q&A calls</li>
+              <li><span class="check">✓</span> 1-on-1 CV review session</li>
+              <li><span class="check">✓</span> Partner immigration advisor intro</li>
+              <li><span class="check">✓</span> Early access to new guides</li>
+              <li><span class="check">✓</span> Direct recruiter access</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Join Waitlist →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Premium Tier -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-green">🏆 Settle In Ireland / NZ</div>
+          <h2>Premium Local Tiers</h2>
+          <p>For professionals making the final move or already in-country. Deeper local intel, live recruiter Q&As, and 1-on-1 coaching from people on the ground.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Local Monthly -->
+          <div class="pricing-card reveal">
+            <div class="plan-name">Local Monthly</div>
+            <div class="plan-price"><sup>€</sup>29</div>
+            <div class="plan-period">/month</div>
+            <div class="plan-desc">Full local access. Cancel anytime.</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Full content library (local depth)</li>
+              <li><span class="check">✓</span> Community Telegram group</li>
+              <li><span class="check">✓</span> Weekly live Q&A with local recruiters</li>
+              <li><span class="check">✓</span> CV localisation workshops</li>
+              <li><span class="check">✓</span> Interview prep sessions</li>
+              <li><span class="check">✓</span> Partner immigration advisor access</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Join Waitlist →</a>
+          </div>
+
+          <!-- Local Annual -->
+          <div class="pricing-card featured reveal">
+            <div class="popular-tag">Best Value — Save 43%</div>
+            <div class="plan-name">Local Annual</div>
+            <div class="plan-price"><sup>€</sup>199</div>
+            <div class="plan-period">/year</div>
+            <div class="plan-desc">The complete relocation package.</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Everything in Monthly</li>
+              <li><span class="check">✓</span> 1-on-1 onboarding call with Mark or Richard</li>
+              <li><span class="check">✓</span> Priority Q&A access</li>
+              <li><span class="check">✓</span> Early access to new guides</li>
+              <li><span class="check">✓</span> Exclusive workshops</li>
+              <li><span class="check">✓</span> Monthly country report included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Join Waitlist →</a>
+          </div>
+
+          <!-- Lifetime -->
+          <div class="pricing-card reveal">
+            <div class="plan-name">Lifetime Access</div>
+            <div class="plan-price"><sup>€</sup>399</div>
+            <div class="plan-period">one-time</div>
+            <div class="plan-desc">Pay once. Access forever.</div>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Everything in Annual</li>
+              <li><span class="check">✓</span> All future countries added</li>
+              <li><span class="check">✓</span> Founding member badge</li>
+              <li><span class="check">✓</span> Direct expert access</li>
+              <li><span class="check">✓</span> Invite to annual meetup</li>
+              <li><span class="check">✓</span> All future reports included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Join Waitlist →</a>
+          </div>
+        </div>
+
+        <p class="text-center text-muted mt-6" style="font-size:0.9rem">💳 Payment processing coming soon. Join the waitlist now to lock in founding member pricing.</p>
+      </div>
+    </section>
+
+    <!-- Reports Add-on -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-gold">📊 Add-On: Monthly Reports</div>
+          <h2>Monthly Country Intelligence Reports</h2>
+          <p>Available as a standalone subscription or bundled with any plan. PDF delivered to your inbox every month.</p>
+        </div>
+        <div class="grid-2" style="max-width:700px;margin:0 auto">
+          <div class="report-card reveal">
+            <div class="report-card-header">
+              <div class="badge badge-green" style="margin-bottom:0.75rem">🍀 Ireland</div>
+              <h3>Ireland Monthly Report</h3>
+              <p style="margin-top:0.5rem;font-size:0.9rem">New jobs, permit updates, regional spotlight, salary benchmarks, key news.</p>
+            </div>
+            <div class="report-card-body">
+              <div style="font-size:2rem;font-weight:800;color:var(--color-text);margin-bottom:0.25rem">€4.99<span style="font-size:1rem;font-weight:500;color:var(--color-text-muted)">/month</span></div>
+              <a href="reports.html" class="btn btn-outline" style="width:100%;justify-content:center;margin-top:1rem">Learn More →</a>
+            </div>
+          </div>
+          <div class="report-card reveal" style="border-color:rgba(59,130,246,0.3)">
+            <div class="report-card-header" style="background:linear-gradient(135deg,rgba(59,130,246,0.2),rgba(16,185,129,0.1))">
+              <div class="badge badge-gold" style="margin-bottom:0.75rem">⭐ Bundle</div>
+              <h3>Ireland + NZ Bundle</h3>
+              <p style="margin-top:0.5rem;font-size:0.9rem">Both country reports. Best value for those comparing or connected to both countries.</p>
+            </div>
+            <div class="report-card-body">
+              <div style="font-size:2rem;font-weight:800;color:var(--color-text);margin-bottom:0.25rem">€9.99<span style="font-size:1rem;font-weight:500;color:var(--color-text-muted)">/month</span></div>
+              <a href="reports.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1rem">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">Compare Plans</div>
+          <h2>Full Feature Comparison</h2>
+        </div>
+        <div class="reveal" style="overflow-x:auto">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Global Basic</th>
+                <th>Global Standard</th>
+                <th>Local Monthly</th>
+                <th>Local Annual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Content library access</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>Community Telegram group</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>Monthly newsletter</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>CV & interview guides</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>Live Q&A calls (group)</td><td class="check-no">—</td><td class="check-yes">Biweekly</td><td class="check-yes">Weekly</td><td class="check-yes">Weekly</td></tr>
+              <tr><td>CV localisation workshop</td><td class="check-no">—</td><td class="check-yes">✓</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>Local recruiter access</td><td class="check-no">—</td><td class="check-no">—</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>Immigration partner intro</td><td class="check-no">—</td><td class="check-no">—</td><td class="check-yes">✓</td><td class="check-yes">✓</td></tr>
+              <tr><td>1-on-1 onboarding call</td><td class="check-no">—</td><td class="check-no">—</td><td class="check-no">—</td><td class="check-yes">✓</td></tr>
+              <tr><td>Monthly country report</td><td class="check-no">Add-on</td><td class="check-no">Add-on</td><td class="check-no">Add-on</td><td class="check-yes">Included</td></tr>
+              <tr><td>Early access to new guides</td><td class="check-no">—</td><td class="check-no">—</td><td class="check-no">—</td><td class="check-yes">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge badge-blue">FAQ</div>
+          <h2>Pricing Questions</h2>
+        </div>
+        <div style="max-width:720px;margin:0 auto">
+          <div class="faq-item reveal">
+            <button class="faq-question">When will payment be available? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We're currently building out our payment infrastructure. Join the waitlist now to be notified when we launch and to lock in founding member pricing. Early members will receive a discount on their first 3 months.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">Can I switch between plans? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Yes. You can upgrade or downgrade your plan at any time. Upgrades take effect immediately. Downgrades take effect at the next billing cycle.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">Is there a free trial? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We offer a selection of free resources on our Resources page. These give you a taste of the quality and depth of our content. We're also considering a 7-day free trial for paid plans — join the waitlist to be informed.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">What currency are prices in? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Prices are shown in Euro (€). For Global tier members paying from countries with different currencies, we'll offer local currency pricing where possible. NZD pricing will be available for New Zealand-based members.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background:var(--color-bg-2)">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="badge badge-blue" style="margin-bottom:1rem">🚀 Get Early Access</div>
+          <h2>Join the Waitlist Today</h2>
+          <p>Be first to know when we launch. Founding members get exclusive pricing and early access to all features.</p>
+          <form class="waitlist-form" style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+            <input type="email" placeholder="Enter your email address" class="form-input" style="max-width:320px" required />
+            <button type="submit" class="btn btn-primary btn-lg">Join Waitlist →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">🌍</div><span>Settle In</span></a>
+          <p>Expert relocation guides, community, and support for skilled professionals moving to Ireland and New Zealand.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="ireland.html">Move to Ireland</a></li>
+            <li><a href="new-zealand.html">Move to New Zealand</a></li>
+            <li><a href="resources.html">Free Resources</a></li>
+            <li><a href="reports.html">Monthly Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="community.html">Join Telegram</a></li>
+            <li><a href="community.html#calls">Live Q&A Calls</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#partners">Immigration Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color:var(--color-text-muted)">© 2026 Settle In. All rights reserved. Not a licensed immigration advisor.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
