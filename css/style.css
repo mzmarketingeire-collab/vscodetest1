@@ -92,6 +92,13 @@ p { color: var(--color-text-muted); }
   background-clip: text;
 }
 
+.text-gradient-navy {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ---------- Layout ---------- */
 .container {
   max-width: 1200px;
@@ -1681,6 +1688,12 @@ p { color: var(--color-text-muted); }
 
 .coming-soon-card h3 {
   margin-bottom: 1rem;
+  color: #1c1c1e;
+}
+
+.coming-soon-card p {
+  color: #1c1c1e;
+  font-weight: 500;
 }
 
 .coming-soon-card .btn {
@@ -1966,7 +1979,8 @@ body.legacy-dark-theme .pain-point-card h3,
 body.legacy-dark-theme .journey-card:not(.pioneer-card) h3,
 body.legacy-dark-theme .lead-magnet-card h3,
 body.legacy-dark-theme .content-preview-card h4,
-body.legacy-dark-theme .testimonial-name {
+body.legacy-dark-theme .testimonial-name,
+body.legacy-dark-theme .coming-soon-card h3 {
   color: #1c1c1e !important;
 }
 
