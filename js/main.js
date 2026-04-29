@@ -1,306 +1,409 @@
-/* ============================================================
-   SETTLE IN — Main JavaScript
-   ============================================================ */
+/**
+ * SettleIn - Main JavaScript
+ * Handles navigation, forms, animations, and interactive elements
+ */
 
-/* ---------- Navigation ---------- */
-(function () {
-  const nav = document.querySelector('.nav');
-  const hamburger = document.querySelector('.nav-hamburger');
-  const mobileMenu = document.querySelector('.nav-mobile');
+// Import country configuration
+import { countryConfig, formatPrice } from './countryConfig.js';
 
-  // Scroll effect
-  function onScroll() {
-    if (window.scrollY > 20) {
-      nav && nav.classList.add('scrolled');
-    } else {
-      nav && nav.classList.remove('scrolled');
-    }
+// ============================================================
+// Navigation
+// ============================================================
+
+// Sticky navigation on scroll
+const nav = document.querySelector('.nav');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  
+  lastScroll = currentScroll;
+});
 
-  // Mobile menu toggle
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', function () {
-      const isOpen = mobileMenu.style.display === 'flex';
-      mobileMenu.style.display = isOpen ? 'none' : 'flex';
-      hamburger.setAttribute('aria-expanded', String(!isOpen));
-    });
-  }
+// Mobile menu toggle
+const hamburger = document.querySelector('.nav-hamburger');
+const mobileMenu = document.querySelector('.nav-mobile');
 
-  // Active nav link
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(function (link) {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.style.display === 'flex';
+    mobileMenu.style.display = isOpen ? 'none' : 'flex';
+    hamburger.setAttribute('aria-expanded', !isOpen);
+    
+    // Animate hamburger icon
+    hamburger.classList.toggle('active');
   });
-})();
+  
+  // Close mobile menu when clicking a link
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.style.display = 'none';
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.classList.remove('active');
+    });
+  });
+}
 
-/* ---------- Scroll Reveal ---------- */
-(function () {
-  const elements = document.querySelectorAll('.reveal');
-  if (!elements.length) return;
+// ============================================================
+// FAQ Accordion
+// ============================================================
 
-  const observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  
+  if (question && answer) {
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      
+      // Close all other items
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('open');
+          const otherAnswer = otherItem.querySelector('.faq-answer');
+          if (otherAnswer) otherAnswer.style.maxHeight = null;
         }
       });
-    },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-  );
-
-  elements.forEach(function (el) { observer.observe(el); });
-})();
-
-/* ---------- FAQ Accordion ---------- */
-(function () {
-  document.querySelectorAll('.faq-question').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      const item = btn.closest('.faq-item');
-      const answer = item.querySelector('.faq-answer');
-      const isOpen = item.classList.contains('open');
-
-      // Close all
-      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
-        openItem.classList.remove('open');
-        openItem.querySelector('.faq-answer').style.maxHeight = '0';
-      });
-
-      // Open clicked (if it was closed)
+      
+      // Toggle current item
+      item.classList.toggle('open');
+      
       if (!isOpen) {
-        item.classList.add('open');
         answer.style.maxHeight = answer.scrollHeight + 'px';
+      } else {
+        answer.style.maxHeight = null;
       }
     });
-  });
-})();
-
-/* ---------- Pricing Toggle ---------- */
-(function () {
-  const toggle = document.querySelector('.toggle-switch');
-  const labelMonthly = document.querySelector('[data-label="monthly"]');
-  const labelAnnual  = document.querySelector('[data-label="annual"]');
-  const monthlyPrices = document.querySelectorAll('[data-monthly]');
-  const annualPrices  = document.querySelectorAll('[data-annual]');
-  const periodLabels  = document.querySelectorAll('[data-period]');
-
-  if (!toggle) return;
-
-  let isAnnual = false;
-
-  function updatePricing() {
-    if (isAnnual) {
-      toggle.classList.add('on');
-      if (labelMonthly) labelMonthly.classList.remove('active');
-      if (labelAnnual)  labelAnnual.classList.add('active');
-      monthlyPrices.forEach(function (el) { el.style.display = 'none'; });
-      annualPrices.forEach(function (el)  { el.style.display = ''; });
-      periodLabels.forEach(function (el)  { el.textContent = el.dataset.period === 'annual' ? '/year' : el.dataset.period; });
-    } else {
-      toggle.classList.remove('on');
-      if (labelMonthly) labelMonthly.classList.add('active');
-      if (labelAnnual)  labelAnnual.classList.remove('active');
-      monthlyPrices.forEach(function (el) { el.style.display = ''; });
-      annualPrices.forEach(function (el)  { el.style.display = 'none'; });
-      periodLabels.forEach(function (el)  { el.textContent = el.dataset.period === 'monthly' ? '/month' : el.dataset.period; });
-    }
   }
+});
 
-  toggle.addEventListener('click', function () {
-    isAnnual = !isAnnual;
-    updatePricing();
+// ============================================================
+// Lead Magnet Forms
+// ============================================================
+
+// Scam Checklist Form
+const scamForm = document.getElementById('scam-checklist-form');
+const scamSuccess = document.getElementById('scam-success');
+
+if (scamForm && scamSuccess) {
+  scamForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(scamForm);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      type: 'scam-checklist'
+    };
+    
+    // TODO: Send to your email service (Mailchimp, ConvertKit, etc.)
+    console.log('Scam checklist signup:', data);
+    
+    // Show success message
+    scamForm.style.display = 'none';
+    scamSuccess.style.display = 'block';
+    
+    // Optional: Track conversion
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'lead_magnet_signup', {
+        'event_category': 'Lead Generation',
+        'event_label': 'Scam Checklist'
+      });
+    }
   });
+}
 
-  updatePricing();
-})();
+// Cost of Living Calculator Form
+const calculatorForm = document.getElementById('calculator-form');
+const calculatorSuccess = document.getElementById('calculator-success');
 
-/* ---------- Smooth Scroll for Anchor Links ---------- */
-document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+if (calculatorForm && calculatorSuccess) {
+  calculatorForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(calculatorForm);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      destination: formData.get('destination'),
+      type: 'cost-calculator'
+    };
+    
+    // TODO: Send to your email service
+    console.log('Calculator signup:', data);
+    
+    // Show success message
+    calculatorForm.style.display = 'none';
+    calculatorSuccess.style.display = 'block';
+    
+    // Optional: Track conversion
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'lead_magnet_signup', {
+        'event_category': 'Lead Generation',
+        'event_label': 'Cost Calculator'
+      });
+    }
+  });
+}
+
+// ============================================================
+// Scroll Reveal Animations
+// ============================================================
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // Optionally unobserve after revealing
+      // observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe all elements with .reveal class
+const revealElements = document.querySelectorAll('.reveal');
+revealElements.forEach(el => observer.observe(el));
+
+// ============================================================
+// Pioneer Spots Counter Animation
+// ============================================================
+
+const spotsCounter = document.getElementById('spots-remaining');
+
+if (spotsCounter) {
+  const targetNumber = parseInt(spotsCounter.textContent);
+  let currentNumber = Math.max(0, targetNumber - 20);
+  
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && currentNumber < targetNumber) {
+        const duration = 1500;
+        const increment = (targetNumber - currentNumber) / (duration / 16);
+        
+        const animate = () => {
+          currentNumber += increment;
+          if (currentNumber < targetNumber) {
+            spotsCounter.textContent = Math.floor(currentNumber);
+            requestAnimationFrame(animate);
+          } else {
+            spotsCounter.textContent = targetNumber;
+          }
+        };
+        
+        animate();
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  counterObserver.observe(spotsCounter);
+}
+
+// ============================================================
+// Smooth Scroll for Anchor Links
+// ============================================================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(anchor.getAttribute('href'));
+    const href = this.getAttribute('href');
+    
+    // Skip if it's just "#"
+    if (href === '#') {
+      e.preventDefault();
+      return;
+    }
+    
+    const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
-      const offset = 80;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top: top, behavior: 'smooth' });
+      const navHeight = nav.offsetHeight;
+      const targetPosition = target.offsetTop - navHeight - 20;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
     }
   });
 });
 
-/* ---------- Waitlist Form ---------- */
-(function () {
-  const forms = document.querySelectorAll('.waitlist-form');
-  forms.forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const email = form.querySelector('input[type="email"]');
-      const btn   = form.querySelector('button[type="submit"]');
-      if (!email || !email.value) return;
+// ============================================================
+// Pricing Toggle (for pages with monthly/annual toggle)
+// ============================================================
 
-      // Simulate submission
-      btn.textContent = 'You\'re on the list! ✓';
-      btn.disabled = true;
-      btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-      email.disabled = true;
-    });
-  });
-})();
+const pricingToggle = document.querySelector('.toggle-switch');
+const monthlyLabel = document.querySelector('.pricing-toggle span:first-child');
+const annualLabel = document.querySelector('.pricing-toggle span:last-child');
 
-/* ---------- Contact Form ---------- */
-(function () {
-  const form = document.querySelector('.contact-form');
-  if (!form) return;
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message Sent ✓';
-    btn.disabled = true;
-    btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-  });
-})();
-
-/* ---------- Cursor Trail Effect ---------- */
-(function () {
-  // Only run on non-touch devices
-  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
-
-  let lastTime = 0;
-  const throttleDelay = 30; // ms between trail particles
-
-  function createTrailParticle(x, y) {
-    const particle = document.createElement('div');
-    particle.className = 'cursor-trail';
-    particle.style.left = x + 'px';
-    particle.style.top = y + 'px';
-    document.body.appendChild(particle);
-
-    // Remove particle after animation completes
-    setTimeout(function () {
-      particle.remove();
-    }, 500);
-  }
-
-  document.addEventListener('mousemove', function (e) {
-    const currentTime = Date.now();
+if (pricingToggle && monthlyLabel && annualLabel) {
+  pricingToggle.addEventListener('click', () => {
+    const isAnnual = pricingToggle.classList.toggle('on');
     
-    // Throttle particle creation
-    if (currentTime - lastTime < throttleDelay) return;
-    lastTime = currentTime;
-
-    createTrailParticle(e.clientX, e.clientY);
+    monthlyLabel.classList.toggle('active', !isAnnual);
+    annualLabel.classList.toggle('active', isAnnual);
+    
+    // Update pricing display
+    updatePricingDisplay(isAnnual);
   });
-})();
+}
 
-/* ---------- Interactive World Map (Leaflet.js) ---------- */
-(function () {
-  const mapElement = document.getElementById('world-map');
-  if (!mapElement || typeof L === 'undefined') return;
-
-  // Initialize map - centered to show all key locations (Ireland, NZ, UK, Australia, Canada, USA)
-  const map = L.map('world-map', {
-    center: [15, 40],
-    zoom: 2,
-    minZoom: 1,
-    maxZoom: 6,
-    scrollWheelZoom: false,
-    zoomControl: true
-  });
-
-  // Add dark tile layer
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 20
-  }).addTo(map);
-
-  // Country data with coordinates and status
-  const countries = {
-    // Green - Live
-    ireland: { coords: [53.4, -8.0], color: '#10b981', status: 'live', name: 'Ireland', link: 'ireland.html' },
-    newZealand: { coords: [-40.9, 174.0], color: '#10b981', status: 'live', name: 'New Zealand', link: 'new-zealand.html' },
+function updatePricingDisplay(isAnnual) {
+  // This function would update pricing cards based on toggle
+  // Implementation depends on your pricing card structure
+  const pricingCards = document.querySelectorAll('[data-monthly-price]');
+  
+  pricingCards.forEach(card => {
+    const monthlyPrice = card.getAttribute('data-monthly-price');
+    const annualPrice = card.getAttribute('data-annual-price');
+    const priceElement = card.querySelector('.plan-price');
+    const periodElement = card.querySelector('.plan-period');
     
-    // Amber - Coming Soon
-    uk: { coords: [54.0, -2.0], color: '#f59e0b', status: 'soon', name: 'United Kingdom' },
-    australia: { coords: [-26.0, 133.0], color: '#f59e0b', status: 'soon', name: 'Australia' },
-    canada: { coords: [56.0, -106.0], color: '#f59e0b', status: 'soon', name: 'Canada' },
-    usa: { coords: [37.0, -95.0], color: '#f59e0b', status: 'soon', name: 'United States' }
-  };
-
-  // Create markers for each country
-  Object.keys(countries).forEach(function (key) {
-    const country = countries[key];
-    
-    const marker = L.circleMarker(country.coords, {
-      radius: 12,
-      fillColor: country.color,
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map);
-
-    // Create popup content
-    let popupContent = '<div style="text-align:center;padding:0.5rem;background:#fff;border-radius:8px">';
-    popupContent += '<strong style="font-size:1.1rem;color:#0a0f1e">' + country.name + '</strong><br/>';
-    
-    if (country.status === 'live') {
-      popupContent += '<span style="color:#059669;font-size:0.85rem;font-weight:600">✓ Full guides available</span><br/>';
-      popupContent += '<a href="' + country.link + '" style="display:inline-block;margin-top:0.5rem;padding:0.4rem 1rem;background:#10b981;color:#fff;text-decoration:none;border-radius:6px;font-size:0.85rem;font-weight:600">Explore →</a>';
-    } else if (country.status === 'soon') {
-      popupContent += '<span style="color:#d97706;font-size:0.85rem;font-weight:600">Coming Soon</span><br/>';
-      popupContent += '<button onclick="showWaitlistForm(\'' + country.name + '\')" style="margin-top:0.5rem;padding:0.4rem 1rem;background:#f59e0b;color:#fff;border:none;border-radius:6px;font-size:0.85rem;font-weight:600;cursor:pointer">Join Waitlist</button>';
+    if (priceElement && periodElement) {
+      if (isAnnual) {
+        priceElement.textContent = annualPrice;
+        periodElement.textContent = '/year';
+      } else {
+        priceElement.textContent = monthlyPrice;
+        periodElement.textContent = '/month';
+      }
     }
+  });
+}
+
+// ============================================================
+// Form Validation Helpers
+// ============================================================
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function showFormError(form, message) {
+  let errorDiv = form.querySelector('.form-error');
+  
+  if (!errorDiv) {
+    errorDiv = document.createElement('div');
+    errorDiv.className = 'form-error';
+    errorDiv.style.cssText = 'color: #ef4444; font-size: 0.875rem; margin-top: 0.5rem;';
+    form.appendChild(errorDiv);
+  }
+  
+  errorDiv.textContent = message;
+  setTimeout(() => {
+    errorDiv.textContent = '';
+  }, 5000);
+}
+
+// ============================================================
+// Country-specific Pricing Display
+// ============================================================
+
+// Detect user's country and show relevant pricing
+// This is a simple implementation - you might want to use a geolocation API
+function detectUserCountry() {
+  // Check URL parameters first
+  const urlParams = new URLSearchParams(window.location.search);
+  const countryParam = urlParams.get('country');
+  
+  if (countryParam && countryConfig[countryParam]) {
+    return countryParam;
+  }
+  
+  // Check localStorage
+  const savedCountry = localStorage.getItem('settlein_country');
+  if (savedCountry && countryConfig[savedCountry]) {
+    return savedCountry;
+  }
+  
+  // Default to global
+  return 'global';
+}
+
+// Save country preference
+function saveCountryPreference(countryKey) {
+  localStorage.setItem('settlein_country', countryKey);
+}
+
+// ============================================================
+// Dropdown Menu (Desktop)
+// ============================================================
+
+const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+dropdowns.forEach(dropdown => {
+  const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+  const menu = dropdown.querySelector('.nav-dropdown-menu');
+  
+  if (toggle && menu) {
+    // Desktop hover
+    dropdown.addEventListener('mouseenter', () => {
+      menu.classList.add('open');
+    });
     
-    popupContent += '</div>';
-
-    marker.bindPopup(popupContent);
-
-    // Click handler
-    marker.on('click', function () {
-      if (country.status === 'live' && country.link) {
-        // Popup will show, user can click the link
+    dropdown.addEventListener('mouseleave', () => {
+      menu.classList.remove('open');
+    });
+    
+    // Mobile click
+    toggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        menu.classList.toggle('open');
       }
     });
-
-    // Hover effect
-    marker.on('mouseover', function () {
-      this.setStyle({ radius: 14, fillOpacity: 1 });
-    });
-    
-    marker.on('mouseout', function () {
-      this.setStyle({ radius: 12, fillOpacity: 0.8 });
-    });
-  });
-
-  // Responsive map height and positioning
-  function adjustMapHeight() {
-    if (window.innerWidth < 768) {
-      mapElement.style.height = '400px';
-      map.setView([10, 60], 1.5); // Better mobile view
-      map.invalidateSize();
-    } else {
-      mapElement.style.height = '500px';
-      map.setView([15, 40], 2); // Desktop view showing all locations
-      map.invalidateSize();
-    }
   }
+});
 
-  window.addEventListener('resize', adjustMapHeight);
-  adjustMapHeight();
-})();
-
-/* ---------- Waitlist Form Modal ---------- */
-window.showWaitlistForm = function (countryName) {
-  const email = prompt('Join the waitlist for ' + countryName + '\n\nEnter your email address:');
-  if (email && email.includes('@')) {
-    alert('Thanks! We\'ll notify you when ' + countryName + ' guides are available.');
-    // In production, this would send to your backend
+// Close dropdowns when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown-menu').forEach(menu => {
+      menu.classList.remove('open');
+    });
   }
+});
+
+// ============================================================
+// Page-specific Initialization
+// ============================================================
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('SettleIn platform initialized');
+  
+  // Detect and save country preference
+  const userCountry = detectUserCountry();
+  console.log('User country:', userCountry);
+  
+  // Add any page-specific initialization here
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  console.log('Current page:', currentPage);
+});
+
+// ============================================================
+// Export for use in other modules
+// ============================================================
+
+export {
+  validateEmail,
+  showFormError,
+  detectUserCountry,
+  saveCountryPreference,
+  countryConfig,
+  formatPrice
 };
