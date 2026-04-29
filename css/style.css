@@ -1005,6 +1005,14 @@ p { color: var(--color-text-muted); }
 /* ---------- Utility ---------- */
 .text-center { text-align: center; }
 .text-muted   { color: var(--color-text-muted); }
+
+.heading-dark {
+  color: #0f172a !important;
+}
+
+.heading-dark-navy {
+  color: #1e3a5f !important;
+}
 .mt-1  { margin-top: 0.5rem; }
 .mt-2  { margin-top: 1rem; }
 .mt-3  { margin-top: 1.5rem; }
